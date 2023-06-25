@@ -9,7 +9,15 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="public/images/favicon-32x32.png" type="image/jpg" >
+    <link
+      rel="shortcut icon"
+      href="public/images/favicon-32x32.png"
+      type="image/jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mui/material@5.3.7/dist/mui.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -55,15 +63,21 @@
 
     <section class="home" id="home-section">
       <div class="home-content">
-          <h1>Hi, I'm Lucas Telles 👋</h1>
-          <h3>Frontend Developer</h3>
-          <a class="resume-link" href="https://drive.google.com/file/d/1K4cUS4DSpUaoheBnitjbM-_6bQme-xSo/view?usp=sharing"  target="_blank">Download Resume</a>
-          <div class="btn-box">
-              <a href="#">Hire me</a>
-              <a href="#">Let's Talk </a>
-            </div>
+        <h1>Hi, I'm Lucas Telles 👋</h1>
+        <h3>Frontend Developer</h3>
+        <a
+          class="resume-link"
+          href="https://drive.google.com/file/d/1K4cUS4DSpUaoheBnitjbM-_6bQme-xSo/view?usp=sharing"
+          target="_blank"
+          >Download Resume</a
+        >
+        <div class="btn-box">
+          <a href="#">Hire me</a>
+          <a href="#">Let's Talk </a>
         </div>
-        <img class="banner-img" src="public/images/banner1.JPG"/> 
+      </div>
+
+      <img class="banner-img" src="public/images/banner1.JPG" />
     </section>
 
     <section class="about" id="about-section">
@@ -71,31 +85,65 @@
         <h1>About</h1>
         <h3>Frontend Developer</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          delectus commodi quae assumenda eum. Cumque commodi eos, laboriosam
-          dolores tempora eius at ut totam ratione error soluta ipsam officia
-          harum.
+          Coming from a background in Advertising, I love creating pages where
+          I'm able to actually create enjoyable interactions and experiences for
+          everyone!
         </p>
-        <div class="btn-box">
-          <a href="#">Hire me</a>
-          <a href="#">Let's Talk </a>
-        </div>
       </div>
     </section>
 
     <section class="projects" id="projects-section">
       <div class="home-content">
         <h1>Projects</h1>
-        <h3>Frontend Developer</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          delectus commodi quae assumenda eum. Cumque commodi eos, laboriosam
-          dolores tempora eius at ut totam ratione error soluta ipsam officia
-          harum.
-        </p>
-        <div class="btn-box">
-          <a href="#">Hire me</a>
-          <a href="#">Let's Talk </a>
+        <div class="projects-content">
+          <div class="card">
+            <img
+              class="card-media"
+              src="public/images/banner2.jpg"
+              alt="green iguana"
+            />
+            <div class="card-content">
+              <h2 class="card-title">Lizard</h2>
+              <p class="card-description">Random Description Random Description Random Description Random Description</p>
+            </div>
+            <div class="card-actions">
+              <button class="mui-button mui-button--primary mui-button--small">
+                Share
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-media"
+              src="public/images/banner2.jpg"
+              alt="green iguana"
+            />
+            <div class="card-content">
+              <h2 class="card-title">Lizard</h2>
+              <p class="card-description">Random Description</p>
+            </div>
+            <div class="card-actions">
+              <button class="mui-button mui-button--primary mui-button--small">
+                Share
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-media"
+              src="public/images/banner2.jpg"
+              alt="green iguana"
+            />
+            <div class="card-content">
+              <h2 class="card-title">Lizard</h2>
+              <p class="card-description">Random Description</p>
+            </div>
+            <div class="card-actions">
+              <button class="mui-button mui-button--primary mui-button--small">
+                Share
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -113,6 +161,9 @@
         ></a>
       </div>
     </section>
+    <button id="back-to-top" onclick="scrollToTop()">
+      <i class="bx bx-chevron-up"></i>
+    </button>
   </body>
 
   <script>
@@ -140,6 +191,21 @@
         navLinks.forEach(function (navLink) {
           navLink.classList.remove("scrolled");
         });
+      }
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    window.addEventListener("scroll", function () {
+      const backToTopButton = document.getElementById("back-to-top");
+      const scrollPosition = window.scrollY;
+
+      if (scrollPosition > 300) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
       }
     });
   </script>
