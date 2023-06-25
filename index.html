@@ -104,7 +104,10 @@
             />
             <div class="card-content">
               <h2 class="card-title">Lizard</h2>
-              <p class="card-description">Random Description Random Description Random Description Random Description</p>
+              <p class="card-description">
+                Random Description Random Description Random Description Random
+                Description
+              </p>
             </div>
             <div class="card-actions">
               <button class="mui-button mui-button--primary mui-button--small">
@@ -172,7 +175,7 @@
       const targetElement = document.getElementById(targetId);
       targetElement.scrollIntoView({ behavior: "smooth" });
     }
-
+ 
     window.addEventListener("scroll", function () {
       const header = document.querySelector(".header");
       const logo = document.querySelector(".logo");
@@ -193,7 +196,9 @@
         });
       }
     });
+  </script>
 
+  <script>
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
