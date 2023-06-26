@@ -340,6 +340,7 @@ span:hover {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 10px;
+  background: rgba(220, 217, 212, 0.5);
 }
 
 .card-media {
@@ -354,12 +355,13 @@ span:hover {
 }
 
 .card-title {
+    color: rgba(0, 0, 0, 0.7);
   margin-bottom: 8px;
   font-weight: bold;
 }
 
 .card-description {
-  color: #dcd9d4;
+  color: rgba(0, 0, 0, 0.7);
   max-width: 315px;
   text-align: start;
 }
