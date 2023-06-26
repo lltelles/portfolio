@@ -318,13 +318,14 @@ span:hover {
   transform: translateY(-0.5rem);
 }
 
-
 .projects {
   height: 100vh;
   display: flex;
   align-items: center;
   padding: 0 10%;
 }
+
+
 
 .projects-content {
   display: flex;
@@ -341,6 +342,18 @@ span:hover {
   justify-content: space-between;
   border-radius: 10px;
   background: rgba(220, 217, 212, 0.5);
+  transform: scale(1) translateZ(0);
+  transform-origin: center;
+  transition: filter 200ms linear, transform 200ms linear;
+}
+
+.card:hover {
+  transform: scale(1.05) translateZ(0);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.projects-content:hover .card:not(:hover) {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(3px);
 }
 
 .card-media {
@@ -355,7 +368,7 @@ span:hover {
 }
 
 .card-title {
-    color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.7);
   margin-bottom: 8px;
   font-weight: bold;
 }
@@ -369,19 +382,33 @@ span:hover {
 .card-actions {
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+  padding: 8px;
   max-height: 80px;
 }
 
 .card-actions a {
   text-decoration: none;
+  font-size: 14px;
+  margin: 0;
+}
+
+.card-actions a:nth-child(2) {
+  margin-right: 0;
 }
 
 .card-actions a:hover {
-  color: rgba(227, 52, 47, 0.8);
+  color: rgba(227, 52, 47, 1);
   transform: translateY(-0.25rem);
   transition: transform 500ms;
 }
+
+.project-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+
 
 #contact-section {
   margin-top: 50px;
