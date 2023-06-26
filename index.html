@@ -18,27 +18,28 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@mui/material@5.3.7/dist/mui.min.css"
     />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
     <header class="header">
-      <a href="/" class="logo">Telles.dev</a>
+      <a href="/" class="logo">telles.<span>dev</span></a>
 
       <nav class="navbar">
         <ul>
           <li>
             <a
               href="#"
-              onclick="smoothScroll(event, 'home-section')"
+              onclick="smoothScroll(event, 'about-section')"
               class="nav-link"
-              >Home</a
+              >About</a
             >
           </li>
           <li>
             <a
               href="#"
-              onclick="smoothScroll(event, 'about-section')"
+              onclick="smoothScroll(event, 'tech-section')"
               class="nav-link"
-              >About</a
+              >Tech Stack</a
             >
           </li>
           <li>
@@ -54,7 +55,7 @@
               href="#"
               onclick="smoothScroll(event, 'contact-section')"
               class="nav-link"
-              >Contact</a
+              ><span>Contact</span></a
             >
           </li>
         </ul>
@@ -63,7 +64,7 @@
 
     <section class="home" id="home-section">
       <div class="home-content">
-        <h1>Hi, I'm Lucas Telles 👋</h1>
+        <h1>Hi, I'm Lucas Telles</h1>
         <h3>Frontend Developer</h3>
         <a
           class="resume-link"
@@ -71,24 +72,84 @@
           target="_blank"
           >Download Resume</a
         >
-        <div class="btn-box">
+        <!-- <div class="btn-box">
           <a href="#">Hire me</a>
           <a href="#">Let's Talk </a>
-        </div>
+        </div> -->
       </div>
-
-      <img class="banner-img" src="public/images/banner1.JPG" />
+      <div class="lottie-container">
+        <lottie-player
+          id="lottie-animation"
+          src="https://assets5.lottiefiles.com/packages/lf20_qvmh6Y.json"
+          background="rgba(0, 0, 0, 0)"
+          speed="1"
+          style="width: 550px; height: 550px"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
     </section>
 
     <section class="about" id="about-section">
-      <div class="home-content">
+      <div class="about-content">
         <h1>About</h1>
-        <h3>Frontend Developer</h3>
+        <p>
+          <span2>Front-end developer</span2> with background in Advertising. I
+          have recently completed a Web Development bootcamp at Ironhack
+          Portugal, where I gained knowledge in Javascript, React, Node.js,
+          Express.js, and MongoDB.
+          <br />
+          <br />
+          As someone who is <span2>passionate</span2> about innovative
+          applications that empower users and disrupt traditional business
+          models, I am looking for a company that shares my values and is making
+          a <span2>difference</span2> in the world. I am
+          <span2>excited</span2> to bring my skills and enthusiasm to a team
+          where I can contribute to meaningful projects.
+          <br />
+          <br />
+          If you are looking for a Front-end developer who is
+          <span2>dedicated</span2>, hardworking, and eager to learn, please
+          don't hesitate to contact me. Let's work together to create something
+          amazing!
+        </p>
+        <div class="btn-box">
+          <a href="#" onclick="smoothScroll(event, 'contact-section')"
+            >Let's Talk</a
+          >
+        </div>
+      </div>
+      <img class="banner-img" src="public/images/banner1.JPG" />
+    </section>
+
+    <section class="tech" id="tech-section">
+      <div class="tech-content">
+        <h1>Technologies I work with</h1>
         <p>
           Coming from a background in Advertising, I love creating pages where
           I'm able to actually create enjoyable interactions and experiences for
           everyone!
         </p>
+        <div class="tech-icons">
+          <i class="bx bxl-javascript"></i>
+          <i class="bx bxl-html5"></i>
+          <i class="bx bxl-css3"></i>
+          <i class="bx bxl-mongodb"></i>
+          <i class="bx bxl-react"></i>
+          <i class="bx bxl-nodejs"></i>
+          <i class="bx bxl-bootstrap"></i>
+          <i class="bx bxl-git"></i>
+        </div>
+      </div>
+      <div class="lottie-container">
+        <lottie-player
+          src="https://assets9.lottiefiles.com/packages/lf20_0n2BI6grFI.json"
+          background="rgba(0, 0, 0, 0)"
+          speed="1"
+          style="width: 500px; height: 500px"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
     </section>
 
@@ -103,48 +164,88 @@
               alt="green iguana"
             />
             <div class="card-content">
-              <h2 class="card-title">Lizard</h2>
+              <h2 class="card-title">Fast and Furious</h2>
               <p class="card-description">
                 Random Description Random Description Random Description Random
                 Description
               </p>
             </div>
             <div class="card-actions">
-              <button class="mui-button mui-button--primary mui-button--small">
-                Share
-              </button>
+              <a
+                href="https://dancing-pixie-0378c7.netlify.app/"
+                class="mui-button mui-button--primary mui-button--small"
+                target="_blank"
+              >
+                < View Project />
+              </a>
+              <a
+                href="https://github.com/lltelles/Principe-real-server"
+                class="mui-button mui-button--primary mui-button--small"
+                target="_blank"
+              >
+                Repo
+              </a>
             </div>
           </div>
           <div class="card">
             <img
               class="card-media"
-              src="public/images/banner2.jpg"
+              src="public/images/banner-crypto.jpg"
               alt="green iguana"
             />
             <div class="card-content">
-              <h2 class="card-title">Lizard</h2>
+              <h2 class="card-title">ExpressCrypto</h2>
               <p class="card-description">Random Description</p>
             </div>
             <div class="card-actions">
-              <button class="mui-button mui-button--primary mui-button--small">
-                Share
-              </button>
+              <a
+                href="https://dancing-pixie-0378c7.netlify.app/"
+                class="mui-button mui-button--primary mui-button--small"
+                target="_blank"
+              >
+                < View Project />
+              </a>
+              <a
+                href="https://github.com/lltelles/Principe-real-server"
+                class="mui-button mui-button--primary mui-button--small"
+                target="_blank"
+              >
+                Repo
+              </a>
             </div>
           </div>
           <div class="card">
             <img
               class="card-media"
-              src="public/images/banner2.jpg"
+              src="public/images/banner-principe.jpg"
               alt="green iguana"
             />
             <div class="card-content">
-              <h2 class="card-title">Lizard</h2>
-              <p class="card-description">Random Description</p>
+              <h2 class="card-title">Príncipe+Real</h2>
+              <p class="card-description">
+                During my final project at Ironhack Portugal, I collaborated
+                with Príncipe+Real to improve their website and enhance the
+                visitor experience of the Principe Real neighborhood in Lisbon.
+                The project aimed to create a platform showcasing local
+                businesses, events, landmarks, and providing essential area
+                information.
+              </p>
             </div>
             <div class="card-actions">
-              <button class="mui-button mui-button--primary mui-button--small">
-                Share
-              </button>
+              <a
+                href="https://dancing-pixie-0378c7.netlify.app/"
+                class="mui-button mui-button--primary mui-button--small"
+                target="_blank"
+              >
+                < View Project />
+              </a>
+              <a
+                href="https://github.com/lltelles/Principe-real-server"
+                class="mui-button mui-button--primary mui-button--small"
+                target="_blank"
+              >
+                Repo
+              </a>
             </div>
           </div>
         </div>
@@ -175,7 +276,7 @@
       const targetElement = document.getElementById(targetId);
       targetElement.scrollIntoView({ behavior: "smooth" });
     }
- 
+
     window.addEventListener("scroll", function () {
       const header = document.querySelector(".header");
       const logo = document.querySelector(".logo");
