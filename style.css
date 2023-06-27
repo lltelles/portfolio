@@ -53,7 +53,6 @@ body {
 
 .navbar {
   position: relative;
-  right: 55px;
 }
 
 .navbar a {
@@ -104,14 +103,13 @@ ul:hover li a:not(:hover) {
 
 .home-content h3 {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
   color: #e3342f;
 }
 
 .home-content p {
   font-size: 16px;
   margin: 20px 0 40px;
-  /* text-align: center; */
   width: 600px;
 }
 
@@ -140,7 +138,6 @@ span:hover {
 
 .home-sci {
   position: absolute;
-  bottom: 40px;
   width: 170px;
   display: flex;
   justify-content: space-between;
@@ -165,6 +162,7 @@ span:hover {
 
 .home-sci a:hover {
   color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .home-sci a::before {
@@ -174,7 +172,7 @@ span:hover {
   left: 0;
   width: 0;
   height: 100%;
-  background: rgba(220, 217, 212, 0.5);
+  background: #ededed;
   z-index: -1;
   transition: 0.5s;
 }
@@ -182,6 +180,7 @@ span:hover {
 .home-sci a:hover::before {
   width: 100%;
 }
+
 
 .about {
   height: 100vh;
@@ -196,11 +195,6 @@ span:hover {
   width: 35%;
   border-radius: 5%;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
-  transition: width 0.3s ease;
-}
-
-.banner-img:hover {
-  width: 35.5%;
 }
 
 .lottie-container {
@@ -278,10 +272,10 @@ span:hover {
 }
 
 .tech {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 10%;
   gap: 150px;
@@ -318,14 +312,31 @@ span:hover {
   transform: translateY(-0.5rem);
 }
 
+.tech-icons i::after {
+  content: attr(data-tooltip);
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  color: #fff;
+  padding: 5px;
+  font-size: 14px;
+  font-family: "Poppins";
+  border-radius: 5px;
+}
+
+.tech-icons i:hover::after {
+  display: block;
+}
+
 .projects {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   padding: 0 10%;
 }
-
-
 
 .projects-content {
   display: flex;
@@ -353,7 +364,7 @@ span:hover {
 }
 
 .projects-content:hover .card:not(:hover) {
-  filter: brightness(0.5) saturate(0) contrast(1.2) blur(3px);
+  filter: brightness(0.5) saturate(0.5) contrast(1.2) blur(3px);
 }
 
 .card-media {
@@ -382,7 +393,8 @@ span:hover {
 .card-actions {
   display: flex;
   justify-content: space-between;
-  padding: 8px;
+  align-items: center;
+  padding: 16px;
   max-height: 80px;
 }
 
@@ -390,10 +402,6 @@ span:hover {
   text-decoration: none;
   font-size: 14px;
   margin: 0;
-}
-
-.card-actions a:nth-child(2) {
-  margin-right: 0;
 }
 
 .card-actions a:hover {
@@ -409,20 +417,120 @@ span:hover {
   font-size: 25px;
 }
 
-
 #contact-section {
+  height: 55vh;
   margin-top: 50px;
   padding: 0 10%;
-  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 150px;
 }
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.contact-info a,
+p {
+  font-size: 16px;
+  font-family: 'Poppins';
+  text-decoration: none;
+}
+
 
 #contact-section h1 {
   font-size: 56px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
 }
+
+#contact-input input[type="text"],
+#contact-input input[type="email"],
+#contact-input textarea {
+  border-radius: 10px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.form-container label {
+  font-weight: lighter;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 500px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#message {
+  min-width: 500px;
+  min-height: 100px;
+  max-width: 500px;
+  max-height: 100px;
+}
+
+.form-container button {
+  color: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  padding: 0 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  font-size: 16px;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+
+.form-container button:hover {
+  color: #dcd9d4;
+}
+
+.form-container button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.form-container button:hover::before {
+  width: 100%;
+}
+
+/* #contact-form {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+} */
 
 #back-to-top {
   position: fixed;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Telles.dev</title>
+    <title>< telles.dev /></title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -18,7 +18,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@mui/material@5.3.7/dist/mui.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-ui/4.12.3/core/1.6.1/core.min.css"
+    />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -52,6 +60,14 @@
           </li>
           <li>
             <a
+              href="https://drive.google.com/file/d/1K4cUS4DSpUaoheBnitjbM-_6bQme-xSo/view?usp=sharing"
+              target="_blank"
+              class="nav-link"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
               href="#"
               onclick="smoothScroll(event, 'contact-section')"
               class="nav-link"
@@ -65,17 +81,19 @@
     <section class="home" id="home-section">
       <div class="home-content">
         <h1>Hi, I'm Lucas Telles</h1>
-        <h3>Frontend Developer</h3>
-        <a
-          class="resume-link"
-          href="https://drive.google.com/file/d/1K4cUS4DSpUaoheBnitjbM-_6bQme-xSo/view?usp=sharing"
-          target="_blank"
-          >Download Resume</a
-        >
-        <!-- <div class="btn-box">
-          <a href="#">Hire me</a>
-          <a href="#">Let's Talk </a>
-        </div> -->
+        <h3>Front-end Developer</h3>
+
+        <div class="home-sci">
+          <a href="https://www.linkedin.com/in/telles-lucas/" target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/lltelles" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="mailto:lltellesss@gmail.com" target="_blank"
+            ><i class="bx bx-envelope"></i
+          ></a>
+        </div>
       </div>
       <div class="lottie-container">
         <lottie-player
@@ -131,17 +149,17 @@
           everyone!
         </p>
         <div class="tech-icons">
-          <i class="bx bxl-javascript"></i>
-          <i class="bx bxl-html5"></i>
-          <i class="bx bxl-css3"></i>
-          <i class="bx bxl-mongodb"></i>
-          <i class="bx bxl-react"></i>
-          <i class="bx bxl-nodejs"></i>
-          <i class="bx bxl-bootstrap"></i>
-          <i class="bx bxl-git"></i>
+          <i class="bx bxl-javascript" data-tooltip="JavaScript"></i>
+          <i class="bx bxl-html5" data-tooltip="HTML5"></i>
+          <i class="bx bxl-css3" data-tooltip="CSS3"></i>
+          <i class="bx bxl-mongodb" data-tooltip="MongoDB"></i>
+          <i class="bx bxl-react" data-tooltip="ReactJS"></i>
+          <i class="bx bxl-nodejs" data-tooltip="Node.js"></i>
+          <i class="bx bxl-bootstrap" data-tooltip="Bootstrap"></i>
+          <i class="bx bxl-git" data-tooltip="Git"></i>
         </div>
       </div>
-      <div class="lottie-container">
+      <!-- <div class="lottie-container">
         <lottie-player
           src="https://assets9.lottiefiles.com/packages/lf20_0n2BI6grFI.json"
           background="rgba(0, 0, 0, 0)"
@@ -150,7 +168,7 @@
           loop
           autoplay
         ></lottie-player>
-      </div>
+      </div> -->
     </section>
 
     <section class="projects" id="projects-section">
@@ -179,17 +197,11 @@
               >
                 < View Project />
               </a>
-              <a
-                href="https://github.com/lltelles/fast-and-furious-project"
-                class="mui-button mui-button--primary mui-button--small"
-                target="_blank"
-              >
-                Repo
-              </a>
               <div class="project-icons">
                 <i class="bx bxl-javascript"></i>
                 <i class="bx bxl-html5"></i>
                 <i class="bx bxl-css3"></i>
+                <i class="bx bxl-git"></i>
               </div>
             </div>
           </div>
@@ -201,7 +213,11 @@
             />
             <div class="card-content">
               <h2 class="card-title">ExpressCrypto</h2>
-              <p class="card-description">Random Description</p>
+              <p class="card-description">
+                My first full-stack web application project! It's an online
+                crypto portfolio where the user can track their favorite coins
+                and stay up-to-date with the latest news and market trends.
+              </p>
             </div>
             <div class="card-actions">
               <a
@@ -211,13 +227,14 @@
               >
                 < View Project />
               </a>
-              <a
-                href="https://github.com/lltelles/express-crypto-project"
-                class="mui-button mui-button--primary mui-button--small"
-                target="_blank"
-              >
-                Repo
-              </a>
+              <div class="project-icons">
+                <i class="bx bxl-javascript"></i>
+                <i class="bx bxl-html5"></i>
+                <i class="bx bxl-css3"></i>
+                <i class="bx bxl-bootstrap"></i>
+                <i class="bx bxl-nodejs"></i>
+                <i class="bx bxl-mongodb"></i>
+              </div>
             </div>
           </div>
           <div class="card">
@@ -229,12 +246,10 @@
             <div class="card-content">
               <h2 class="card-title">Príncipe+Real</h2>
               <p class="card-description">
-                During my final project at Ironhack Portugal, I collaborated
-                with Príncipe+Real to improve their website and enhance the
-                visitor experience of the Principe Real neighborhood in Lisbon.
-                The project aimed to create a platform showcasing local
-                businesses, events, landmarks, and providing essential area
-                information.
+                During my final project at Ironhack Portugal, I had the amazing
+                opportunity to collaborate with Príncipe+Real, an organization
+                dedicated to promoting and enhancing the Principe Real
+                neighborhood in Lisbon.
               </p>
             </div>
             <div class="card-actions">
@@ -245,13 +260,14 @@
               >
                 < View Project />
               </a>
-              <a
-                href="https://github.com/lltelles/Principe-real-server"
-                class="mui-button mui-button--primary mui-button--small"
-                target="_blank"
-              >
-                Repo
-              </a>
+              <div class="project-icons">
+                <i class="bx bxl-javascript"></i>
+                <i class="bx bxl-react"></i>
+                <i class="bx bxl-css3"></i>
+                <i class="bx bxl-nodejs"></i>
+                <i class="bx bxl-mongodb"></i>
+                <i class="bx bxl-git"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -259,16 +275,34 @@
     </section>
 
     <section id="contact-section">
-      <div class="home-sci">
-        <a href="https://www.linkedin.com/in/telles-lucas/" target="_blank"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a href="https://github.com/lltelles" target="_blank"
-          ><i class="bx bxl-github"></i
-        ></a>
-        <a href="mailto:lltellesss@gmail.com" target="_blank"
-          ><i class="bx bx-envelope"></i
-        ></a>
+      <div class="contact-info">
+      <h1><span2>Contact</span2> with me</h1>
+      <p>+55 41 99609-0243</p>
+      <a href="mailto:lltellesss@gmail.com" target="_blank"
+      >lltellesss@gmail.com</i</a>
+      <a href="https://www.linkedin.com/in/telles-lucas/" target="_blank"
+      >linkedin.com/in/telles-lucas</a>
+          <a href="https://github.com/lltelles" target="_blank"
+            > github.com/lltelles</a>
+    </div>
+      <div class="form-container">
+        <form id="contact-form">
+          <div id="contact-input">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div id="contact-input">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div id="contact-input">
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+          </div>
+          <div>
+            <button type="submit">Send</button>
+          </div>
+        </form>
       </div>
     </section>
     <button id="back-to-top" onclick="scrollToTop()">
@@ -276,49 +310,11 @@
     </button>
   </body>
 
-  <script>
-    function smoothScroll(event, targetId) {
-      event.preventDefault();
-      const targetElement = document.getElementById(targetId);
-      targetElement.scrollIntoView({ behavior: "smooth" });
-    }
-
-    window.addEventListener("scroll", function () {
-      const header = document.querySelector(".header");
-      const logo = document.querySelector(".logo");
-      const navLinks = document.querySelectorAll(".nav-link");
-      const scrollPosition = window.scrollY;
-
-      if (scrollPosition > 0) {
-        header.classList.add("scrolled");
-        logo.classList.add("scrolled");
-        navLinks.forEach(function (navLink) {
-          navLink.classList.add("scrolled");
-        });
-      } else {
-        header.classList.remove("scrolled");
-        logo.classList.remove("scrolled");
-        navLinks.forEach(function (navLink) {
-          navLink.classList.remove("scrolled");
-        });
-      }
-    });
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
 
   <script>
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-
-    window.addEventListener("scroll", function () {
-      const backToTopButton = document.getElementById("back-to-top");
-      const scrollPosition = window.scrollY;
-
-      if (scrollPosition > 300) {
-        backToTopButton.style.display = "block";
-      } else {
-        backToTopButton.style.display = "none";
-      }
-    });
+ 
   </script>
+  <script src="index.js"></script>
 </html>
