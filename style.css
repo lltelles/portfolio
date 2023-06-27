@@ -306,6 +306,7 @@ span:hover {
   font-size: 50px;
 }
 
+
 .tech-icons i:hover {
   color: #e3342f;
   transition: color 0.3s ease, transform 500ms;
@@ -359,7 +360,7 @@ span:hover {
 }
 
 .card:hover {
-  transform: scale(1.05) translateZ(0);
+  transform: scale(1.03) translateZ(0);
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -372,6 +373,7 @@ span:hover {
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
+
 
 .card-content {
   padding: 16px;
@@ -447,11 +449,12 @@ p {
   line-height: 1.2;
 }
 
-#contact-input input[type="text"],
+/* #contact-input input[type="text"],
 #contact-input input[type="email"],
 #contact-input textarea {
   border-radius: 10px;
-}
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+} */
 
 .form-container {
   display: flex;
@@ -477,7 +480,8 @@ p {
   padding: 8px;
   margin-bottom: 16px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #message {
@@ -550,4 +554,15 @@ p {
   color: rgba(227, 52, 47, 0.8);
   transform: translateY(-0.25rem);
   transition: transform 500ms;
+}
+
+.scroll-section {
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 1.5s ease, transform 2s ease;
+}
+
+.fade-up {
+  opacity: 1;
+  transform: translateY(0);
 }

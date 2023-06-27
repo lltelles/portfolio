@@ -2,6 +2,8 @@ function smoothScroll(event, targetId) {
     event.preventDefault();
     const targetElement = document.getElementById(targetId);
     targetElement.scrollIntoView({ behavior: "smooth" });
+
+    history.pushState(null, null, `#${targetId}`);
   }
 
   window.addEventListener("scroll", function () {
@@ -64,6 +66,27 @@ window.onload = function () {
     );
   });
 };
+
+function fadeScrollSections() {
+  const scrollSections = document.querySelectorAll('.scroll-section');
+
+  scrollSections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+
+    if (scrollPosition >= sectionTop - windowHeight + sectionHeight * 0.5) {
+      section.classList.add('fade-up');
+    } else {
+      section.classList.remove('fade-up');
+    }
+  });
+}
+
+window.addEventListener('scroll', fadeScrollSections);
+window.addEventListener('resize', fadeScrollSections);
+fadeScrollSections();
 
 
 
