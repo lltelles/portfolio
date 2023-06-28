@@ -55,7 +55,7 @@ window.onload = function () {
     };
 
     // Send the form data using EmailJS
-    emailjs.send("service_wf5vjft", "template_6klr8rl", formData).then(
+    emailjs.send("service_4o03wya", "template_6klr8rl", formData).then(
       function () {
         location.reload();
         console.log("SUCCESS!");
