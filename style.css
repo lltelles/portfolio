@@ -389,7 +389,7 @@ span3 {
 }
 
 .projects:hover .card2:not(:hover) {
-  filter: brightness(1) saturate(0.5) contrast(1.2) blur(2px);
+  filter: brightness(1) saturate(1) contrast(1.2) blur(2px);
 }
 
 .card-img {
