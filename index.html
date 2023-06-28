@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>< telles.dev /></title>
+    <title></ telles.dev ></title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -60,14 +60,17 @@
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1K4cUS4DSpUaoheBnitjbM-_6bQme-xSo/view?usp=sharing"
+              href="https://drive.google.com/file/d/1XXC7kNp25MPi-sVvRTozM-cWdXNxydbl/view?usp=sharing"
               target="_blank"
               class="nav-link"
               >Resume</a
             >
           </li>
           <li>
-            <a href="#" onclick="smoothScroll(event, 'contact-section')"
+            <a
+              href="#"
+              onclick="smoothScroll(event, 'contact-section')"
+              class="nav-link"
               ><span>Contact</span></a
             >
           </li>
@@ -75,6 +78,7 @@
       </nav>
     </header>
 
+    <!-- HOME SECTION --------------------------------------------------------------------------------------------------------- -->
     <section class="home" id="home-section">
       <div class="home-content scroll-section">
         <h1>Hi, I'm Lucas Telles</h1>
@@ -104,6 +108,8 @@
         ></lottie-player>
       </div>
     </section>
+
+    <!-- ABOUT SECTION ---------------------------------------------------------------------------------------- -->
 
     <section class="about scroll-section" id="about-section">
       <div class="about-content">
@@ -137,14 +143,16 @@
       <img class="banner-img" src="public/images/banner1.JPG" />
     </section>
 
+    <!-- TECHNOLOGIES SECTION --------------------------------------------------------------------------------------------- -->
+
     <section class="tech scroll-section" id="tech-section">
       <div class="tech-content">
-        <h1>Technologies I work with</h1>
-        <p>
+        <h1><span3>Technologies</span3> I work with</h1>
+        <!-- <p>
           Coming from a background in Advertising, I love creating pages where
           I'm able to actually create enjoyable interactions and experiences for
           everyone!
-        </p>
+        </p> -->
         <div class="tech-icons">
           <i class="bx bxl-javascript" data-tooltip="JavaScript"></i>
           <i class="bx bxl-html5" data-tooltip="HTML5"></i>
@@ -156,32 +164,24 @@
           <i class="bx bxl-git" data-tooltip="Git"></i>
         </div>
       </div>
-      <!-- <div class="lottie-container">
-        <lottie-player
-          src="https://assets9.lottiefiles.com/packages/lf20_0n2BI6grFI.json"
-          background="rgba(0, 0, 0, 0)"
-          speed="1"
-          style="width: 500px; height: 500px"
-          loop
-          autoplay
-        ></lottie-player>
-      </div> -->
     </section>
 
+    <!-- PROJECTS SECTION ------------------------------------------------------------------------------------------------------------ -->
+
     <section class="projects scroll-section" id="projects-section">
-      <h1>Projects</h1>
+      <h1 class="projects-title">Projects</h1>
       <div class="projects-content">
         <div class="card2">
           <img src="public/images/banner-ff.jpg" class="card-img" alt="" />
           <div class="card-body">
             <h1>Fast and Furious</h1>
-            <p class="card-subtitle">game project</p>
+            <p class="card-subtitle">Game project</p>
             <p class="card-info">
               This game project is about a reinterpretation of the masterpiece
               “Fast and Furious”. The player has to control Dom’s car by using
               the keyboard arrows to avoid all the enemies along the way.
             </p>
-            <p class="card-subtitle">*Best Aesthetic Project</p>
+            <p class="card-subtitle">*Best Aesthetic Project at Ironhack</p>
             <div class="card-actions">
               <a
                 href="https://lltelles.github.io/fast-and-furious-project/"
@@ -209,7 +209,7 @@
               portfolio where the user can track their favorite coins and stay
               up-to-date with the latest news and market trends.
             </p>
-            <p class="card-subtitle">*Best Aesthetic Project</p>
+            <p class="card-subtitle">*Best Aesthetic Project at Ironhack</p>
             <div class="card-actions">
               <a
                 href="https://vast-puce-sheep-cap.cyclic.app/home"
@@ -239,11 +239,12 @@
             <h1>Príncipe + Real</h1>
             <p class="card-subtitle">Social project</p>
             <p class="card-info">
-              This game project is about a reinterpretation of the masterpiece
-              “Fast and Furious”. The player has to control Dom’s car by using
-              the keyboard arrows to avoid all the enemies along the way.
+              During my final project at Ironhack Portugal, I had the amazing
+              opportunity to collaborate with Príncipe+Real, an organization
+              dedicated to promoting and enhancing the Principe Real
+              neighborhood in Lisbon.
             </p>
-            <p class="card-subtitle">*Best Aesthetic Project</p>
+            <p class="card-subtitle">*Best Aesthetic Project at Ironhack</p>
 
             <div class="card-actions">
               <a
@@ -266,108 +267,8 @@
         </div>
       </div>
     </section>
-    <!-- <section class="projects scroll-section" id="projects-section">
-      <div class="home-content">
-        <h1>Projects</h1>
-        <div class="projects-content">
-          <div class="card">
-            <img
-              class="card-media"
-              src="public/images/banner-ff.jpg"
-              alt="green iguana"
-            />
-            <div class="card-content">
-              <h2 class="card-title">Fast and Furious</h2>
-              <p class="card-description">
-                This game project is about a reinterpretation of the masterpiece
-                “Fast and Furious”. The player has to control Dom’s car by using
-                the keyboard arrows to avoid all the enemies along the way.
-              </p>
-            </div>
-            <div class="card-actions">
-              <a
-                href="https://lltelles.github.io/fast-and-furious-project/"
-                class="mui-button mui-button--primary mui-button--small"
-                target="_blank"
-              >
-                < View Project />
-              </a>
-              <div class="project-icons">
-                <i class="bx bxl-javascript"></i>
-                <i class="bx bxl-html5"></i>
-                <i class="bx bxl-css3"></i>
-                <i class="bx bxl-git"></i>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card-media"
-              src="public/images/banner-exc.jpg"
-              alt="green iguana"
-            />
-            <div class="card-content">
-              <h2 class="card-title">ExpressCrypto</h2>
-              <p class="card-description">
-                My first full-stack web application project! It's an online
-                crypto portfolio where the user can track their favorite coins
-                and stay up-to-date with the latest news and market trends.
-              </p>
-            </div>
-            <div class="card-actions">
-              <a
-                href="https://vast-puce-sheep-cap.cyclic.app/home"
-                class="mui-button mui-button--primary mui-button--small"
-                target="_blank"
-              >
-                < View Project />
-              </a>
-              <div class="project-icons">
-                <i class="bx bxl-javascript"></i>
-                <i class="bx bxl-html5"></i>
-                <i class="bx bxl-css3"></i>
-                <i class="bx bxl-bootstrap"></i>
-                <i class="bx bxl-nodejs"></i>
-                <i class="bx bxl-mongodb"></i>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card-media"
-              src="public/images/banner-principe.jpg"
-              alt="green iguana"
-            />
-            <div class="card-content">
-              <h2 class="card-title">Príncipe+Real</h2>
-              <p class="card-description">
-                During my final project at Ironhack Portugal, I had the amazing
-                opportunity to collaborate with Príncipe+Real, an organization
-                dedicated to promoting and enhancing the Principe Real
-                neighborhood in Lisbon.
-              </p>
-            </div>
-            <div class="card-actions">
-              <a
-                href="https://dancing-pixie-0378c7.netlify.app/"
-                class="mui-button mui-button--primary mui-button--small"
-                target="_blank"
-              >
-                < View Project />
-              </a>
-              <div class="project-icons">
-                <i class="bx bxl-javascript"></i>
-                <i class="bx bxl-react"></i>
-                <i class="bx bxl-css3"></i>
-                <i class="bx bxl-nodejs"></i>
-                <i class="bx bxl-mongodb"></i>
-                <i class="bx bxl-git"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
+
+    <!-- CONTACT SECTION ------------------------------------------------------------------------------------------------------- -->
 
     <section id="contact-section" class="scroll-section">
       <div class="contact-info">
