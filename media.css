@@ -1,6 +1,10 @@
 @media (max-width: 576px) {
+body{
+    overflow-x: hidden;
+}
+
     .logo {
-      font-size: 24px;
+      font-size: 32px;
     }
   
     .navbar {
@@ -22,11 +26,11 @@
     }
   
     .home-content h1 {
-      font-size: 23px;
+      font-size: 32px;
     }
   
     .home-content h3 {
-      font-size: 18px;
+      font-size: 22px;
       font-weight: 500;
       color: #e3342f;
       display: flex;
@@ -43,7 +47,7 @@
     }
   
     #lottie-animation {
-      transform: scale(0.5);
+      transform: scale(0.7);
       position: relative;
       bottom: 130px;
     }
