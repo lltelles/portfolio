@@ -130,7 +130,7 @@ body{
       justify-content: space-between;
       flex-wrap: wrap;
       font-size: 50px;
-      gap: 7px;
+      /* gap: 7px; */
     }
     .tech-icons i::after {
       font-size: 10px;
