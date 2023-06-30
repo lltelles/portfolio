@@ -214,6 +214,15 @@ body{
       font-size: 14px;
       font-weight: 300;
     }
+
+    .card2:hover {
+        transform: scale(1.03) translateZ(0);
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+      }
+      
+      .projects:hover .card2:not(:hover) {
+        filter: brightness(1) saturate(1) contrast(1.2) blur(2px);
+      }
   
     .card-info {
       font-size: 16px;
