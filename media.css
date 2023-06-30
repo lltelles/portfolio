@@ -312,7 +312,7 @@ body{
     .scroll-section {
       opacity: 0;
       transform: translateY(5px);
-      transition: opacity 0.5s ease, transform 1s ease;
+      transition: opacity 0.5s ease, transform 2s ease;
     }
   
     .fade-up {
