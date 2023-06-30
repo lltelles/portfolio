@@ -423,7 +423,6 @@ span3 {
 }
 
 .card-subtitle {
-  /* text-transform: capitalize; */
   font-size: 14px;
   font-weight: 300;
 }
@@ -533,8 +532,8 @@ p {
 }
 
 #message {
-  min-width: 500px;
-  min-height: 100px;
+  /* min-width: 500px;
+  min-height: 100px; */
   max-width: 500px;
   max-height: 100px;
 }
@@ -616,3 +615,5 @@ textarea:focus {
   opacity: 1;
   transform: translateY(0);
 }
+
+
