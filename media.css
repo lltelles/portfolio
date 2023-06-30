@@ -39,8 +39,8 @@ body{
   
     .home-sci {
       position: relative;
-      left: 40px;
-      top: 10px;
+      left: 50px;
+      /* top: 10px; */
       width: 170px;
       display: flex;
       justify-content: space-between;
