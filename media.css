@@ -210,7 +210,7 @@
 
   .scroll-container {
     scrollbar-width: none;
-    width: 100%; /* Full width of the parent container */
+    width: 360px; /* Full width of the parent container */
     overflow-x: auto; /* Enable horizontal scrolling */
     white-space: nowrap; /* Prevent wrapping to keep items in a single row */
     padding: 10px; /* Optional: Add padding around the scroll area */
