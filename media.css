@@ -75,7 +75,7 @@
   .about-content p {
     font-size: 16px;
     width: 300px;
-    text-align: justify;
+    text-align: start;
     position: relative;
     color: #fff;
   }
