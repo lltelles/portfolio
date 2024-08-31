@@ -143,8 +143,8 @@
     /* height: 100vh; */
     display: flex;
     justify-content: center;
-    border: 1px solid red;
-    margin-top: 10rem;
+    /* border: 1px solid red; */
+    margin-top: 5rem;
   }
 
   .projects h1 {
@@ -162,12 +162,14 @@
   .scroll-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
     scrollbar-width: none;
     width: 100%; /* Full width of the parent container */
     overflow-x: auto; /* Enable horizontal scrolling */
     overflow-y: hidden;
     padding: 10px; /* Optional: Add padding around the scroll area */
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .card-body {
