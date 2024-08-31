@@ -160,6 +160,8 @@
   }
 
   .scroll-container {
+    display: flex;
+    flex-direction: row;
     scrollbar-width: none;
     width: 100%; /* Full width of the parent container */
     overflow-x: auto; /* Enable horizontal scrolling */
