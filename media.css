@@ -1,6 +1,6 @@
 @media (max-width: 576px) {
   :root {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     scrollbar-width: none;
   }
 
