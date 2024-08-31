@@ -277,6 +277,7 @@ span:hover {
   /* align-items: center; */
   padding: 0 10%;
   gap: 150px;
+  margin-top: 5rem;
 }
 
 .tech-content {
@@ -301,35 +302,24 @@ span:hover {
   width: 600px;
 }
 
-.tech-icons {
+.skillsList {
   display: flex;
-  justify-content: space-between;
-  font-size: 50px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  font-size: 1.5rem;
+  margin-top: 5rem;
 }
 
-.tech-icons i:hover {
+.skillsList ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillsList ul li:hover {
   color: #e3342f;
-  transition: color 0.3s ease, transform 500ms;
-  transform: translateY(-0.5rem);
-}
-
-.tech-icons i::after {
-  content: attr(data-tooltip);
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: transparent;
-  color: #fff;
-  padding: 5px;
-  font-size: 14px;
-  font-family: "Poppins";
-  border-radius: 5px;
-}
-
-.tech-icons i:hover::after {
-  display: block;
+  cursor: default;
 }
 
 span3 {
@@ -615,5 +605,3 @@ textarea:focus {
   opacity: 1;
   transform: translateY(0);
 }
-
-
