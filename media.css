@@ -1,6 +1,7 @@
 @media (max-width: 576px) {
   :root {
     overflow-x: hidden;
+    scrollbar-width: none;
   }
 
   body {
@@ -173,7 +174,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     background: rgba(220, 217, 212, 0.5);
-    height: 60vh;
+    height: auto;
     overflow: hidden;
     position: relative;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
