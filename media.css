@@ -136,11 +136,10 @@
   }
 
   .skillsList {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 
   .projects {
-    width: 100%;
     /* height: 100vh; */
     display: flex;
     justify-content: center;
@@ -223,7 +222,6 @@
     height: auto;
     display: flex;
     flex-direction: column;
-
     margin-bottom: 30px;
     /* border: 1px solid red; */
   }
@@ -237,11 +235,11 @@
 
   .contact-info a,
   p {
-    font-size: 14px;
+    font-size: 1.2rem;
   }
 
   #contact-section h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .form-container {
@@ -258,7 +256,7 @@
 
   .form-container input,
   .form-container textarea {
-    width: 100%;
+    width: 360px;
   }
 
   #back-to-top {
