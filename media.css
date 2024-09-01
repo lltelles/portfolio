@@ -70,7 +70,7 @@
 
   .about-content h1 {
     font-size: 32px;
-    text-align: center;
+    text-align: start;
   }
 
   .about-content p {
@@ -157,6 +157,8 @@
 
   .projects p {
     padding-left: 20px;
+    font-size: 0.8rem;
+    color: #ffffff80;
   }
 
   .scroll-container {
