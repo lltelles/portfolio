@@ -354,6 +354,7 @@ span3 {
 .projects-content {
   display: flex;
   justify-content: space-evenly;
+  gap: 20px;
 }
 
 .card-body {
@@ -362,8 +363,7 @@ span3 {
   justify-content: space-between;
   /* border: 1px solid #ccc; */
   border-radius: 5px;
-  width: 16rem;
-  height: 22rem;
+  width: 290px;
   opacity: 0.8;
   background-color: #5455567b;
 }
