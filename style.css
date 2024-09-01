@@ -367,6 +367,7 @@ span3 {
   width: 290px;
   opacity: 0.8;
   background-color: #5455567b;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .card-body:hover {
