@@ -255,6 +255,14 @@
     /* border: 1px solid red; */
   }
 
+  .send-btn-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+  }
+
   .form-container input,
   .form-container textarea {
     width: 360px;
