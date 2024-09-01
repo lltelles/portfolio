@@ -78,7 +78,7 @@
     width: 300px;
     text-align: start;
     position: relative;
-    color: #fff;
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .about .btn-box {
